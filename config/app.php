@@ -166,6 +166,7 @@ return [
          * Package Service Providers...
          */
         JeroenNoten\LaravelAdminLte\ServiceProvider::class,
+        Laravel\Passport\PassportServiceProvider::class,
         /*
          * Application Service Providers...
          */

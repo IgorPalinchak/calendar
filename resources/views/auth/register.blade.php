@@ -5,10 +5,15 @@
     <div class="row justify-content-center">
         <div class="col-md-8">
             <div class="card">
-                <div class="card-header">{{ __('Register') }}</div>
 
+
+                {{--<passport-clients></passport-clients>--}}
+                {{--<passport-authorized-clients></passport-authorized-clients>--}}
+                {{--<passport-personal-access-tokens></passport-personal-access-tokens>--}}
+
+                <div class="card-header">{{ __('Register') }}</div>
                 <div class="card-body">
-                    <form method="POST" action="{{ route('register') }}">
+                    <form method="POST" action="{{ route('api_register') }}">
                         @csrf
 
                         <div class="form-group row">

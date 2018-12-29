@@ -11,10 +11,25 @@
 |
 */
 
-//Route::get('/', function () {
-//    return view('welcome');
-//});
+Route::get('/', function () {
+
+    return view('welcome');
+});
+
+Route::group(['prefix' => 'my_calendar'], function() {
+
+    Route::resource('/', 'API\v1\MyCalendar\Calendar'/* ['middleware'=>['auth:api']]*/);
+});
+
 
 Auth::routes();
 
 Route::get('/home', 'HomeController@index')->name('home');
+
+Auth::routes();
+
+Route::get('/home', 'HomeController@index')->name('home');
+
+
+
+
